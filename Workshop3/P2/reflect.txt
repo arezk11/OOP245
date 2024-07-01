@@ -1,0 +1,11 @@
+In this workshop I learned more about encapsulation, which is a way to organize data and operations within a class.
+Encapsulation helped me in hiding the inner workings of a class from its clients.by making certain variables and
+functions private like m_noOfFoods, m_foodsAdded, totalCal, title, footer, and setEmpty, I was able to limit their access from outside the class.
+
+In the public section of the class, I created functions like init, add, and display. These functions allows interactio
+with the objects and perform specific operations with the clients. For example, the add function enables the clients
+to add food items. These public functions provide a way for clients to interact with the objects without changing the private members of the class.
+
+I faced some problems in my init function in part 1 my logic was somehow wrong but with the help of my professor 
+I got to fix the logic and make it work as expected. but, on matrix the error was a bit diffrent and lead to hours 
+and hours of finding the error.which was about iterate up to noOfItems not m_noOfItems. 
