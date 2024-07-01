@@ -1,0 +1,9 @@
+In this workshop I learned how to allocate and free up memory in my program 
+instead of reserving memory space. This dynamic memory allocation lets me 
+use memory more efficiently and only when necessary I also learned how to deal with file operations 
+like opening and closing files and reading data from them and performing actions on the data
+this knowledge helps me work with external files such as reading information from a file or storing data in a file
+by understanding these concepts I can manage memory effectively and allocating it when needed and freeing it when its no longer needed
+I also I can manipulate files to retrieve or store data for my program
+this new skills I had experienced enhances my adaptabiliy and capability as a new C++ programmer using object orinted programing like 
+polymorphism that allows me to define multiple forms of a function and code flexibility.
