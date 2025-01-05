@@ -1,0 +1,35 @@
+/*
+*****************************************************************************
+                        Workshop 5 - Part 2
+Full Name  : Ali Rezk
+Student ID#: 105593222
+Email      : arezk1@myseneca.ca
+Section    : ZRA
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+*/
+
+During this workshop I became familiar with operator overloading and understood how to overload binary
+and unary operators and helper functions as well.while working on the assignment operator (=) for the Account class, I faced a problem.
+by mistake I made the assignment operator as a constant function which made an unexpected behavior. but after going back to the workshop
+instructions and reviewing the (=) operator instructions again and reviewing my code. I realized my mistake and understood that the assignment operator should not be constant.the reason it didnt work was that the constant qualifier prevented the moddifications to the current instance.
+
+So I removed the constant qualifier to be able to modify the state of the current instance,this change allowed me to assign the value from the right hand side to the current account.
+
+   Account& Account::operator=(Account& rhs)
+    {
+        
+        if (m_number == 0 && rhs.m_number != -1)
+        {
+            m_number = rhs.m_number;
+            m_balance = rhs.m_balance;
+            rhs.m_number = 0;
+            rhs.m_balance = 0.0;
+        }
+        return *this;
+    }
+
+I also learned the importance of carefully reading instructions and checking my code to make sure my code follows the instructions to prevent such errors.
